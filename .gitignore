@@ -1,0 +1,100 @@
+# Binaries
+###############
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+lldap-operator
+/bin/
+/dist/
+/out/
+/build/
+
+# Go build artifacts
+#####################
+*.test
+*.out
+
+# Go modules
+############
+/vendor/
+/Godeps/
+/dep/
+/pkg/mod
+go.sum.e
+
+# Logs & debug
+###############
+*.log
+*.log.*
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Coverage & profiling
+#######################
+coverage.*
+coverage/
+/cover.out
+profile.out
+cpu.prof
+mem.prof
+
+# Editor / IDE
+###############
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (GoLand)
+.idea/
+*.iml
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# macOS
+###############
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux / misc
+###############
+*~
+.nfs*
+
+# Kubernetes / Operator specific
+################################
+# Envtest (kubebuilder / controller-runtime)
+/testbin/
+/bin/envtest/
+/config/crd/bases/*.backup
+
+# Local dev config
+.env
+.env.*
+.local/
+.tmp/
+
+# Helm chart artifacts
+#######################
+*/charts/*-*.tgz
+*/charts/Chart.lock
+
+# Docker
+#########
+docker-compose.override.yml
+**/.dockerignore.local
+
+# Node / frontend (if you ever add a UI)
+########################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
